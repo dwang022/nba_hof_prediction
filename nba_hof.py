@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -6,7 +7,7 @@ import plotly.express as px
 df = pd.read_csv("hof.csv")
 
 # Streamlit App
-st.set_page_config(page_title="Basketball Player Stats App", page_icon="🏀", layout="wide")
+st.set_page_config(page_title="Basketball Hall of Fame Prediction App", page_icon="🏀", layout="wide")
 
 # Dropdown for Player Selection
 selected_player = st.selectbox("Select a player:", df['player'])
@@ -104,3 +105,4 @@ fig_career_stats.update_layout(
 
 # Show the Plotly chart for Career Statistics
 st.plotly_chart(fig_career_stats)
+
