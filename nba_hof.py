@@ -51,7 +51,7 @@ player_info_career_stats = player_info[['player'] + career_stats_order].rename(c
 
 st.subheader(f"Career Statistics and Accolades for {selected_player}")
 column_labels = {'hof': 'In the HOF?', 'first_seas': 'First Season', 'last_seas': 'Last Season', 'ppg': 'Points Per Game', 'apg': 'Assists Per Game', 'rpg': 'Rebounds Per Game', 'AllStarCount': 'All-Star Count', 'nba mvp': 'NBA Most Valuable Player', 'championships': 'Championships', 'dpoy': 'Defensive Player of the Year', 'nba roy': 'NBA Rookie of the Year'}
-st.table(player_info.drop(columns=['player_id', 'player', 'hof_probability', 'smoy', 'All-Rookie 1st Team', 'All-Rookie 2nd Team'], errors='ignore')[['hof', 'first_seas', 'last_seas', 'ppg', 'apg', 'rpg', 'AllStarCount', 'All-NBA 1st Team', 'All-NBA 2nd Team', 'All-NBA 3rd Team', 'All-Defense 1st Team', 'All-Defense 2nd Team', 'nba roy', 'dpoy', 'nba mvp', 'Championships', 'Finals MVP']].rename(columns=column_labels))
+st.table(player_info.drop(columns=['player_id', 'player', 'hof_probability', 'All-Rookie 1st Team', 'All-Rookie 2nd Team'], errors='ignore')[['hof', 'first_seas', 'last_seas', 'ppg', 'apg', 'rpg', 'AllStarCount', 'All-NBA 1st Team', 'All-NBA 2nd Team', 'All-NBA 3rd Team', 'All-Defense 1st Team', 'All-Defense 2nd Team', 'nba roy', 'dpoy', 'nba mvp', 'Championships', 'Finals MVP']].rename(columns=column_labels))
 
 # Display Hall of Fame Probability
 hof_probability = player_info['hof_probability'].values[0]
