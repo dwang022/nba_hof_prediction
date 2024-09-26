@@ -1,4 +1,4 @@
-# nba-salary-prediction
+# nba_hof_prediction
 
 ## [Link to Article](https://medium.com/@dwang22/predicting-basketball-hall-of-fame-probabilities-with-machine-learning-7b8cc925506f)
 
